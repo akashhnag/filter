@@ -1,0 +1,18 @@
+<p>
+  <input type="text" [(ngModel)]="search">
+</p>
+<!--<ul>
+  <li *ngFor="let s of states | filter:search">{{s}}</li>
+</ul>-->
+<div>
+  <table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr *ngFor="let s of details | filter:search">
+      <td >{{s.name}}</td>
+      <td >{{s.email}}</td>
+    </tr>
+  </table>
+</div>
